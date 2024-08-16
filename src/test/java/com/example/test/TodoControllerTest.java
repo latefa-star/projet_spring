@@ -10,4 +10,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 public class TodoControllerTest {
+
+    public void test()
+    {
+        
+    }
 }
+
