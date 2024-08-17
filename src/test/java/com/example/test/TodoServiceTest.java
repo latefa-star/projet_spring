@@ -45,10 +45,11 @@ public class TodoServiceTest {
         Todo t1=new Todo("1","Titre1","desc1");
         Todo t2=new Todo("2","Titre2","desc2");
         Todo t3=new Todo("3","Titre3","desc3");
-        List<Todo> fakeList= Arrays.asList(t1,t2,t3);
+        Todo t4=new Todo("4","Titre4","desc4");
+        List<Todo> fakeList= Arrays.asList(t1,t2,t3,t4);
         given(todoRepository.findAll()).willReturn(fakeList);
 
-        assertThat(todoService.listsTodo()).hasSize(3).contains(t1,t2,t3);
+        assertThat(todoService.listsTodo()).hasSize(4).contains(t1,t2,t3,t4);
     }
 
     @Test

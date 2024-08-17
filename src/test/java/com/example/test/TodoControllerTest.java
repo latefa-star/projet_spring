@@ -11,9 +11,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @AutoConfigureMockMvc
 public class TodoControllerTest {
 
-    public void test()
-    {
-        
-    }
+
 }
 
